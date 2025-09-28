@@ -3,6 +3,10 @@ namespace Tyuiu.PisarevMA.Sprint1.Task0.V9.Lib
 {
     public class DataService : ISprint1Task0V9
     {
+        public DataService()
+        {
+        }
+
         public double Calculate()
         {
             return (9 / 3) * 4 / 3 / 2 + 1;
