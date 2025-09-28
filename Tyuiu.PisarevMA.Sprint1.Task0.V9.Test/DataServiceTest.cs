@@ -5,7 +5,7 @@ namespace Tyuiu.PisarevMA.Sprint1.Task0.V9.Test
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void TValidExpression()
+        public void ValidExpression()
         {
             DataService ds = new DataService();
             var res = ds.Calculate();
