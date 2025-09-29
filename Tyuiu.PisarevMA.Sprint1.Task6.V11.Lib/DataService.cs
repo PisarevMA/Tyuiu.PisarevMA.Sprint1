@@ -6,7 +6,11 @@ namespace Tyuiu.PisarevMA.Sprint1.Task6.V11.Lib
         public bool CheckeFirstLetterRepetition(string value)
         {
             if (value.IndexOf(value.ToCharArray()[0]) != -1) { return true; }
-            return false;
+            else
+            {
+                return false;
+            }
+                
         }
     }
 }
