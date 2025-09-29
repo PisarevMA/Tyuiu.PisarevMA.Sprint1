@@ -5,12 +5,14 @@ namespace Tyuiu.PisarevMA.Sprint1.Task6.V11.Lib
     {
         public bool CheckeFirstLetterRepetition(string value)
         {
-            if (value.IndexOf(value.ToCharArray()[0]) != -1) { return true; }
-            else
-            {
+                for (var i = 1; i < value.Length; i++)
+                {
+                    if (value[0] == value[i])
+                    {
+                        return true;
+                    }
+                }
                 return false;
-            }
-                
         }
     }
 }

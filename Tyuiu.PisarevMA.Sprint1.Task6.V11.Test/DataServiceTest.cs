@@ -5,12 +5,21 @@ namespace Tyuiu.PisarevMA.Sprint1.Task6.V11.Test
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void ValidString()
+        public void ValidExpressionTrue()
         {
             DataService ds = new DataService();
-            string value = "afffcav";
-            bool res = ds.CheckeFirstLetterRepetition(value);
-            Assert.IsTrue(res);
+            string value = "áàðàáàí";
+            var res = ds.CheckeFirstLetterRepetition(value);
+            Assert.AreEqual(true, res);
+        }
+        [TestMethod]
+        public void ValidExpressionFalse()
+        {
+            DataService ds = new DataService();
+            string value = "àðáóç";
+            var res = ds.CheckeFirstLetterRepetition(value);
+            Assert.AreEqual(false, res);
+
         }
     }
 }
